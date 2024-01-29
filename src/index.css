@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* .clist{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.itemslist{
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid grey;
+  min-width: 250px;
+}
+.form-field{
+  text-align: center;
+} */
+.countries-list{
+  & .form-field{
+    text-align: center;
+  }
+  & .clist{
+    display: flex;
+    flex-wrap: wrap;
+    
+    & .itemslist{
+      list-style-type: none;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid grey;
+      min-width: 250px;
+    }
+  }
+}
